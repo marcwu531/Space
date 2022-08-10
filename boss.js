@@ -30,13 +30,15 @@ async function bosss() {
     boss.style.right = (-100)+"px"
     boss.style.display = "none"
     level++;
-    target = Math.floor(level**2*2+Math.E)    
+    target = Math.floor((level**2*2+Math.E)*(Math.PI/phi))    
     uspawn()
     //for(uci=0;uci<Math.floor(level**0.8);uci++) {
     ucreate(Math.floor(level**0.8))//level,uci+1)
     /*await delay(Math.floor(Math.random()*501)+1000)
     }*/
 }
+
+var phi = (1+Math.sqrt(5))/2
 
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));

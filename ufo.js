@@ -133,7 +133,7 @@ clearInterval(move[this.bu]);
     console.log(err)
   }
 }
-var target = 3
+var target = 8
 var spawn
 
 function uspawn() {
