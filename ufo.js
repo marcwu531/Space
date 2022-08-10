@@ -45,7 +45,7 @@ document.getElementById("border").appendChild(upclone[this.ufonum])
 ufospd[this.ufonum] = Math.random()*(max-min+1)+min
   var spdk = Math.floor(ufospd[this.ufonum]*1000)
   //console.log(spdk)
-if  (spdk == 531) {ufospd[this.ufonum] = 3}
+if  ((spdk%531)==0) {ufospd[this.ufonum] = 3}
 ufomove[this.ufonum] = setInterval(function(){downmove(ufowhat)}, 10)
 }
 
