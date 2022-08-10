@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, user-scramble=no">
+    <head>
+      <link rel="stylesheet" href="style.css">
+        <body>
+            <!--<canvas id="canvas">-->
+            <div id="border">
+              <div id="bbulletc"></div>
+              <!--boss bullet circle-->
+              <div id="bbulletr"></div>
+              <!--boss bullet rectangle-->              
+            <div id="boss"></div>
+            <div id="bulletBody"></div>
+              <div id="ufoup" class="ufo"></div>
+              <div id="ufodown" class="ufo"></div>
+            <div id="playerup"></div>
+            <div id="player"></div>
+            <div id="hide"></div>
+            <div id="showtext">0</div>
+            </div>
+            <!--</canvas>-->
+            <div class="up">  
+                <input id="up" type="button" value="Up" ontouchstart="hold('up')" ontouchend="stop('up')" onmousedown="hold('up')" onmouseup="stop('up')">
+                  </div>
+            <div class="down">
+                <input id="down" type="button" value="Down" ontouchstart="hold('down')" ontouchend="stop('down')" onmousedown="hold('down')" onmouseup="stop('down')">
+            </div>
+            <div class="left">
+                <input id="left" type="button" value="Left" ontouchstart="hold('left')" ontouchend="stop('left')" onmousedown="hold('left')" onmouseup="stop('left')">
+            </div>
+            <div class="right">
+                <input id="right" type="button" value="Right" ontouchstart="hold('right')" ontouchend="stop('right')" onmousedown="hold('right')" onmouseup="stop('right')">
+            </div>
+          <script src="player.js">
+          </script>
+          <script src="pbmove.js"></script>          
+          <script src="boss.js"></script>
+          <script src="bullet.js"></script>
+          <script src="ufo.js"></script>
+          <script src="lose.js"></script>
+          <!--<script src="number.js"></script>-->
+        </body>
+    </head>
+  </html>
